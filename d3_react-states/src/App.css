@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.Counter {
+  color:brown;
+  text-align: center;
+}
+.even{
+  color: red;
+}
+.odd{
+  color: blue;
+}
