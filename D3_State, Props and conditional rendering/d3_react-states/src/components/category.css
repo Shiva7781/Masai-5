@@ -1,0 +1,8 @@
+.category {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
