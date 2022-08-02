@@ -14,25 +14,26 @@ import "./App.css";
 
 function App() {
   const food = "Pizza";
-  const age = 12;
+  const age = 21;
   const skills = ["MERN", "node", "DSA"];
 
   return (
-    <div className="App">
-      <Skill skill="vscode" />
-      Your fav food is {food}, Your are {age} years old
-      <div>{1 + 2 + (4 / 2) * 7}</div>
-      <div>You are {age > 18 ? "Eligible" : "Not Eligible"} for license</div>
-      <div>
-        {skills.map((e) => {
-          // return <p className="redtext"> 1. {e}</p>;
-          // return <Skill age="1" name="test" />;
-          // return <Skill skill={e} />;
-          return <Skill skill={e} key="value" age={15} />;
-        })}
+    <>
+      <div className="App">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-xnFJKejTBrJnPWcj3g1GhT1iRPTptnDVaQ&usqp=CAU" alt="missing" />
+        <div>
+          <Skill skill="VS Code" />
+          Your fav food is {food}, Your are {age} years old
+          <div>You are {age > 18 ? "Eligible" : "Not Eligible"} for license</div>
+          <div>
+            {skills.map((e) => {
+              // return <p className="redtext"> 1. {e}</p>;
+              return <Skill skill={e} key="value" age={15} />;
+            })}
+          </div>
+        </div>
       </div>
-
-    </div>
+    </>
   );
 }
 
@@ -44,12 +45,9 @@ function Skill(props) {
 
 export default App;
 
-
-
 // import lib from "lib";
 // //you call library code
 // lib()
-
 
 // import framework from "framework";
 // import exp from "constants";
@@ -63,5 +61,5 @@ export default App;
 // const app = exp()
 
 // app.get("./", function (req, res) {
-  
+
 // })
